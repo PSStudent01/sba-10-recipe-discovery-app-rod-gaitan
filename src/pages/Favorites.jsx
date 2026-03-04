@@ -22,7 +22,7 @@ function Favorites() {  //Defines the 'Favorites' page component. it gets everyt
                     <RecipeCard key={recipe.idMeal} recipe={recipe} /> // 'key={recipe.idMeal}' = for each recipe item, a unique ID (idMeal) gets assigned to it 
                                                                         // and then the that property gets assigned to 'key' variable
                                                                         // 'recipe={recipe}' = passes the 'recipe data' into 'RecipeCard' as a prop. The whole recipe OBJECT item gets passed in as a prop.  
-                                                                        // so that the 'RecipeCard' component can pull out whatever it needs. For example:
+                                                                        // so that the 'RecipeCard' component can pull out whatever it needs from it. For example:
                                                                         // 'recipe.idMeal' from----> <Link to={`/recipe/${recipe.idMeal}`}>View Recipe</Link>                                       
                 ))}
             </div>
