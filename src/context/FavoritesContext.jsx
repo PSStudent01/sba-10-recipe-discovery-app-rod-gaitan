@@ -37,6 +37,8 @@ export function FavoritesProvider({ children }) { // defining provider component
   )
 }
 
-export function useFavorites() {
-  return useContext(FavoritesContext)
+export function useFavorites() {      
+  return useContext(FavoritesContext)  // useContext goes into 'FavoritesContext' and grabs everything inside the value prop:
+                                        // {{ favorites, addFavorite, removeFavorite, isFavorite }} and returns all 4 of those things at once 
+                                   
 }
