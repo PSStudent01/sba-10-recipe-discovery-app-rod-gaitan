@@ -39,4 +39,4 @@ function Navbar() {  //Defines the 'Navbar' component. It has no props because i
   )
 }
 
-export default Navbar  //Exports the hook so other files can import and use it.
+export default Navbar  //Exports the component so other files can import and use it.

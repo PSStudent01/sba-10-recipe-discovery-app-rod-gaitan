@@ -11,4 +11,4 @@ function Spinner() { // Defines the Spinner component
   )
 }
 
-export default Spinner  //Exports the hook so other files can import and use it.
+export default Spinner  //Exports the component so other files can import and use it.

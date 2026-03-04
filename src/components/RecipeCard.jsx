@@ -16,7 +16,7 @@ function RecipeCard({ recipe }) { //Defines the component 'RecipeCard' and expec
   )
 }
 
-export default RecipeCard  //Exports the hook so other files can import and use it.
+export default RecipeCard  //Exports the component so other files can import and use it.
 
 
 

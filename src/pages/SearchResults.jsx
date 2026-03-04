@@ -21,7 +21,7 @@ function SearchResults() {    //Defines the SearchResults page component, no pro
                                  // 'error' = returns an error message if something goes wrong
 
       // 4 conditionals, 3 mapping to the variables above (data, loading, error)                 
-    if (loading) return <Spinner /> // IF we're still waiting for data ( iows, loading ), 'loading' is true, THEN run the 'Spinner()' from 'Spinner.jsx' and return <Spinner />
+    if (loading) return <Spinner /> // IF we're still waiting for data ( iows, loading ), it means 'loading' is true, THEN run the 'Spinner()' from 'Spinner.jsx' and return <Spinner />
     if (error) return <ErrorMessage message={error} /> // IF (not ELSE IF) something went wrong, THEN run the 'ErrorMessage({ message })' from 'ErrorMessage.jsx' and display the error message. 
 
     // Handles the situation where the search found no results:
@@ -48,4 +48,4 @@ function SearchResults() {    //Defines the SearchResults page component, no pro
     )
 }
 
-export default SearchResults    //Exports the hook so other files can import and use it.
+export default SearchResults    //Exports the component so other files can import and use it.

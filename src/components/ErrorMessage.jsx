@@ -11,4 +11,4 @@ function ErrorMessage({ message }) {  //Defines the component.
   )
 }
 
-export default ErrorMessage //Exports the hook so other files can import and use it.
+export default ErrorMessage //Exports the component so other files can import and use it.

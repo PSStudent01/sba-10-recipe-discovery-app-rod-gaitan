@@ -30,7 +30,7 @@ function Favorites() {  //Defines the 'Favorites' page component. it gets everyt
     )
 }
 
-export default Favorites  //Exports the hook so other files can import and use it.
+export default Favorites  //Exports the component so other files can import and use it.
 
 /*
 These come directly from 'TheMealDB' API:
