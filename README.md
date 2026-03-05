@@ -1,16 +1,96 @@
-# React + Vite
+\# Recipe Discovery App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A single-page application built with React that allows users to browse recipes by category, search for specific recipes, view detailed recipe information, and manage a personal list of favorite recipes.
 
-## React Compiler
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
 
-## Expanding the ESLint configuration
+\#
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Features:
+
+
+
+\- Browse recipes by category
+
+\- Search recipes by name
+
+\- View detailed recipe information including ingredients and instructions
+
+\- Add and remove recipes from favorites
+
+\- Favorites persist across browser sessions
+
+
+
+\#
+
+Technologies Used:
+
+
+
+\- React
+
+\- React Router DOM
+
+\- TheMealDB API
+
+\- CSS
+
+
+
+\#
+
+Installation:
+
+
+
+1\. Clone the repository:
+
+\*
+
+git clone <your-repo-url>
+
+
+
+
+
+2\. Navigate into the project folder:
+
+\*
+
+cd sba-10-recipe-discovery-app
+
+
+
+
+
+3\. Install dependencies:
+
+\*
+
+npm install
+
+
+
+
+
+4\. Run the development server:
+
+\*
+
+npm run dev
+
+
+
+
+
+5\. Open your browser and go to:
+
+\*
+
+http://localhost:5173
+
+
+

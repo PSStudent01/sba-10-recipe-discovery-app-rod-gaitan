@@ -28,10 +28,10 @@ function RecipeDetail() {
   }
 
   return (
-    <div>
+    <div className="recipe-detail">
       <h1>{recipe.strMeal}</h1>
       <img src={recipe.strMealThumb} alt={recipe.strMeal} width="300" />
-      <button onClick={handleFavoriteClick}>
+      <button className="btn-favorite" onClick={handleFavoriteClick}>
         {isFavorite(recipe.idMeal) ? 'Remove from Favorites' : 'Add to Favorites'}
       </button>
       <h2>Instructions</h2>

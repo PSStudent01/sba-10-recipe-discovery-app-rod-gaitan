@@ -33,9 +33,9 @@ function SearchResults() {    //Defines the SearchResults page component, no pro
 
     // ELSE load page with the following details:
     return (
-        <div>
+        <div className="page">
             <h1>Results for "{query}"</h1>
-            <div>
+            <div className="grid">
                 {data.meals.map(recipe => (  //the API returns an object with a 'meals' array inside it. This loops through 'data.meals' and for each  'recipe' item in the 'meals' array of object 'data' and renders something for each.
                     <RecipeCard key={recipe.idMeal} recipe={recipe} /> // 'key={recipe.idMeal}' = for each recipe item, a unique ID (idMeal) gets assigned to it 
                                                                         // and then the that property gets assigned to 'key' variable

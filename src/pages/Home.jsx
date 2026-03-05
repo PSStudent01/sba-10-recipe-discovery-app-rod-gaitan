@@ -17,10 +17,11 @@ function Home() { //Defines the Home page component without props
 
   // ELSE load page with the following details:
   return (
-    <div>
+    <div className="page">
       <h1>Recipe Categories</h1>
-      <div>
+      <div className="grid">
         {data.categories.map(category => (  //the API returns an object with a 'categories' array inside it. This loops through 'data.categories' and for each  'category' in the 'categories' array of object data and renders something for each.
+          <div className="card" key={category.idCategory}> 
           <Link key={category.idCategory} to={`/category/${category.strCategory}`}> {/* // 'key={category.idCategory}' = for each category item, a unique ID (idCategory) gets assigned to it
                                                                                     // and then the that property gets assigned to 'key' variable  
                                                                                     // 'to={`/category/${category.strCategory}' = builds a dynamic URL, example '/category/Seafood' 
@@ -32,7 +33,8 @@ function Home() { //Defines the Home page component without props
                                                                                            // and then  that property gets assigned to 'alt' variable   */}
             <p>{category.strCategory}</p>      {/* // '{category.strCategory}' = for each category item, a category paragraph (strCategory) gets assigned to it 
                                                  // and DOES NOT get assigned to a variable, but rather rendered/displayed.  */}
-          </Link> 
+          </Link>
+        </div> 
         ))}
       </div>
     </div>

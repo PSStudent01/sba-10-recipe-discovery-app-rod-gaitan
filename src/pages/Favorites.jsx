@@ -15,9 +15,9 @@ function Favorites() {  //Defines the 'Favorites' page component. it gets everyt
 
     // ELSE, it renders the page as follows: 
     return (
-        <div>
+        <div className="page">
             <h1>My Favorites</h1>
-            <div>
+            <div className="grid">
                 {favorites.map(recipe => (  // loops through each recipe in the 'favorites' array....
                     <RecipeCard key={recipe.idMeal} recipe={recipe} /> // 'key={recipe.idMeal}' = for each recipe item, a unique ID (idMeal) gets assigned to it 
                                                                         // and then the that property gets assigned to 'key' variable

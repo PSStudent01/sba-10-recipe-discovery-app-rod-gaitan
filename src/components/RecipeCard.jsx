@@ -6,7 +6,7 @@ function RecipeCard({ recipe }) { //Defines the component 'RecipeCard' and expec
                                 // <RecipeCard recipe={someRecipe} />
 
   return (  //Everything here gets displayed on the screen.
-    <div>
+    <div className="card">
       <img src={recipe.strMealThumb} alt={recipe.strMeal} width="200" /> {/*'src={recipe.strMealThumb}' = the image URL that comes from the API */}
       <h3>{recipe.strMeal}</h3>    {/* Displays the 'recipe' name as a heading.  'strMeal' is what the API calls the 'recipe name'.*/}
       <Link to={`/recipe/${recipe.idMeal}`}>View Recipe</Link> {/* - 'Link' = means that navigates without page reload
